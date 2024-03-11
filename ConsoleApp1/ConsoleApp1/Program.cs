@@ -5,10 +5,15 @@ class Program
     {
         int[] tab = new int[10];
         Random rand = new Random();
+        
         for (int i = 0; i < tab.Length; i++)
         {
-            tab[i] = rand.Next();
+            tab[i] = rand.Next()%100;
         }
-        Console.WriteLine(tab[0]);
+        
+        foreach (var elem in tab)
+        {
+            Console.WriteLine(elem);
+        }
     }
 }
