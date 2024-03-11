@@ -16,6 +16,7 @@ class Program
             Console.WriteLine(elem);
         }
         Console.WriteLine("Average: " + Average(tab));
+        Console.WriteLine("Max: " + Max(tab));
     }
 
     public static int Average(int[] tab)
@@ -26,5 +27,18 @@ class Program
             sum += num;
         }
         return sum / tab.Length;
+    }
+    
+    public static int Max(int[] tab)
+    {
+        var max = 0;
+        foreach (var num in tab)
+        {
+            if (num > max)
+            {
+                max = num;
+            }
+        }
+        return max;
     }
 }
