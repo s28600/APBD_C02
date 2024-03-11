@@ -15,5 +15,16 @@ class Program
         {
             Console.WriteLine(elem);
         }
+        Console.WriteLine("Average: " + Average(tab));
+    }
+
+    public static int Average(int[] tab)
+    {
+        var sum = 0;
+        foreach (var num in tab)
+        {
+            sum += num;
+        }
+        return sum / tab.Length;
     }
 }
