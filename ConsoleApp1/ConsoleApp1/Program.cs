@@ -22,9 +22,9 @@ class Program
     public static int Average(int[] tab)
     {
         var sum = 0;
-        foreach (var num in tab)
+        foreach (var elem in tab)
         {
-            sum += num;
+            sum += elem;
         }
         return sum / tab.Length;
     }
